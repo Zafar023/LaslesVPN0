@@ -592,6 +592,9 @@ path {
 
   align-items: center;
   gap: 10px;
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
 }
 .logo a {
   color: #0b132a;
