@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plans</title>
+<link rel="icon" href="./img/logo.png" />
+<link rel="stylesheet" href="./style.css">
+<style>
+/* Your CSS styles go here */
+</style>
+</head>
+<body>
+  <img
+  src="https://aster.ng/wp-content/uploads/2019/12/186124-full_ajax-loading-gif-transparent-background-0425.gif"
+  alt=""
+  class="loader"
+/>
+    <header class="header">
+        <div class="container">
+          <div class="header_wraper">
+            <div class="header_logo">
+              <img src="./img/logo.png" alt="logo" />
+              <a href="./index.html" id="LaslesVPN1">LaslesVPN</a>
+            </div>
+            <div class="header_menu">
+              <a href="https://zafar023.github.io/zafar/portfolio" target="_blank">About</a>
+              <!-- <a href="#features">Features</a>
+              <a href="#plan">Pricing</a>
+              <a href="#slider">Testimonials</a>
+              <a href="#footer">Help</a> -->
+              <div class="header_knopki">
+                <a href="./login/index.html">Sign In</a>
+                <button class="red" onclick="window.location.href='./login/index.html'">Sign In</button>
+              </div>
+            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+              alt="burger"
+              class="header_burger"
+            />
+          </div>
+        </div>
+      </header>
+
+      <section class="plan" id="plan">
+        <div class="container">
+          <div class="plan_wraper">
+            <div class="plan_chose">
+              <h2>Choose Your Plan</h2>
+              <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+            </div>
+            <div class="plan_cards">
+              <div class="plan_card">
+                <div class="plan_fut">
+                  <img class="plan_free" src="./img/Free.png" alt="Free" />
+                  <strong>Free Plan</strong>
+                </div>
+                <div class="plan_content">
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Unlimited Bandwidth</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Encrypted Connection</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>No Traffic Logs</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Works on All Devices</p>
+                  </div>
+                </div>
+                <div class="plan_knopka">
+                  <b>Free</b>
+                  <button class="red" onclick="purchaseAlert('Free Plan')">Select</button>
+                </div>
+              </div>
+              <div class="plan_card">
+                <div class="plan_fut">
+                  <img class="plan_free" src="./img/Free.png" alt="Free" />
+                  <strong>Standard Plan</strong>
+                </div>
+                <div class="plan_content">
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Unlimited Bandwidth</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Encrypted Connection</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>No Traffic Logs</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Works on All Devices</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Connect Anywhere</p>
+                  </div>
+                </div>
+                <div class="plan_knopka">
+                  <b>$9/ mo</b>
+                  <button class="red" onclick="purchaseAlert('Standard Plan')">Select</button>
+                </div>
+              </div>
+              <div class="plan_card">
+                <div class="plan_fut">
+                  <img class="plan_free" src="./img/Free.png" alt="Free" />
+                  <strong>Premium Plan</strong>
+                </div>
+                <div class="plan_content">
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Unlimited Bandwidth</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Encrypted Connection</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>No Traffic Logs</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Works on All Devices</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Connect Anywhere</p>
+                  </div>
+                  <div class="plan_galka">
+                    <img src="./img/galka2.png" alt="galka2" />
+                    <p>Get New Features</p>
+                  </div>
+                </div>
+                <div class="plan_knopka">
+                  <b>$12 <span>/ mo</span></b>
+                  <button class="red" onclick="purchaseAlert('Premium Plan')">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+      function purchaseAlert(plan) {
+        alert("You have purchased the " + plan + "!");
+      }
+      const loader = document.querySelector(".loader");
+
+      setTimeout(() => {
+      loader.remove()
+      }, 2000);
+      </script>
+
+</body>
+</html>

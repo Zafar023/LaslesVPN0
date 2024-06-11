@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./img/logo.png" />
+<link rel="stylesheet" href="./style.css">
+<title>Subscribe</title>
+<style>
+/* Your CSS styles go here */
+</style>
+</head>
+<body>
+    <img
+    src="https://aster.ng/wp-content/uploads/2019/12/186124-full_ajax-loading-gif-transparent-background-0425.gif"
+    alt=""
+    class="loader"
+  />
+  
+  <header class="header">
+    <div class="container">
+      <div class="header_wraper">
+        <div class="header_logo">
+          <img src="./img/logo.png" alt="logo" />
+          <a href="./index.html" id="LaslesVPN1">LaslesVPN</a>
+        </div>
+        <div class="header_menu">
+          <a href="https://zafar023.github.io/zafar/portfolio" target="_blank">About</a>
+          <!-- <a href="#features">Features</a>
+          <a href="#plan">Pricing</a>
+          <a href="#slider">Testimonials</a>
+          <a href="#footer">Help</a> -->
+          <div class="header_knopki">
+            <a href="./login/index.html">Sign In</a>
+            <button class="red" onclick="window.location.href='./login/index.html'">Sign In</button>
+          </div>
+        </div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+          alt="burger"
+          class="header_burger"
+        />
+      </div>
+    </div>
+  </header>
+<section class="subscribe" id="features">
+  <div class="container cent">
+    <div class="subscribe_wrapper marg">
+      <div class="subscribe_content">
+        <h2>Subscribe Now to Get Special Features!</h2>
+        <p>Let's subscribe with us and find the fun.</p>
+      </div>
+      <button class="redSahodov" onclick="subscribeAlert()">Subscribe Now</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const loader = document.querySelector(".loader");
+
+setTimeout(() => {
+  loader.remove()
+}, 2000);
+
+function subscribeAlert() {
+  alert("Thank you for subscribing! You will now receive special features.");
+}
+
+</script>
+
+</body>
+</html>
