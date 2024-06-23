@@ -33,6 +33,12 @@ P {
   }
 }
 
+.none {
+  /* display: none; */
+  text-decoration: none;
+  color: #4f5665;
+  font-size: calc(0.16vw + 16px);
+}
 
 .open {
   top: 0;
