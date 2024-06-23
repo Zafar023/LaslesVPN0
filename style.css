@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: #4f5665;
   font-size: calc(0.16vw + 16px);
+  /* cursor: pointer; */
   &:hover {
     text-decoration: underline;
   }
@@ -33,8 +34,6 @@ P {
   }
 }
 
-
-
 .open {
   top: 0;
   .none {
@@ -42,13 +41,21 @@ P {
     text-decoration: none;
     color: #4f5665;
     font-size: calc(0.16vw + 16px);
+    /* cursor: pointer; */
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: underline;
+    }
   }
 }
 .cent {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   .marg {
     margin: 100px;
     display: flex;
@@ -106,8 +113,15 @@ P {
     text-decoration: none;
     color: #4f5665;
     font-size: calc(0.16vw + 16px);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      /* cursor: pointer; */
+    }
+    &:active {
+      text-decoration: underline;
+    }
   }
-  
 
   @media (max-width: 800px) {
     position: fixed;
@@ -115,7 +129,7 @@ P {
     left: 0;
     width: 100%;
     height: 100dvh;
-    z-index:4;
+    z-index: 4;
 
     background: rgba(255, 255, 255, 0.521);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -468,7 +482,6 @@ P {
 
 /* slider Start */
 .slider {
-  
 }
 .slider_wraper {
   display: flex;
@@ -477,8 +490,6 @@ P {
   /* align-items: center; */
   justify-content: center;
   gap: 30px;
-  
-  
 }
 .splide__arrow {
   top: calc(0.35vw + 15em);
@@ -496,13 +507,12 @@ P {
   align-items: center;
 }
 path {
-  
 }
 .splide__arrow--prev {
   background-image: url(./img/prev.svg);
   padding: calc(0.15vw + 30px);
   left: calc(2vw + 2em); /* Adjusted for better responsiveness */
-  
+
   @media (max-width: 1440px) {
     left: calc(2vw + 3em);
   }
@@ -552,17 +562,14 @@ path {
 .splide {
 }
 .splide__track {
-  
 }
 .splide__list {
   display: flex;
   gap: 38px;
-  
 }
 .splide__slide {
   display: flex;
   justify-content: center;
- 
 }
 .splide__pagination__page {
   /* margin-top: 100px; */
@@ -572,7 +579,6 @@ path {
   width: calc(0.4vw + 400px);
   border: 1px solid #dddddd;
   padding: 10px;
-  
 }
 .card .users {
   display: flex;
@@ -581,8 +587,6 @@ path {
   gap: calc(0.5vw + 50px);
   padding-top: 0;
   padding-bottom: calc(0.1vw + 10px);
-
-    
 }
 .content {
 }
@@ -649,7 +653,6 @@ path {
   padding-top: 150px;
   @media (max-width: 768px) {
     display: flex;
-    
   }
   @media (max-width: 630px) {
     text-align: center;
@@ -683,7 +686,6 @@ path {
 }
 
 /* footer End  */
-
 
 body {
   font-family: Arial, sans-serif;
