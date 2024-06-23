@@ -101,13 +101,13 @@ P {
   gap: calc(0.4vw + 20px);
   transition: all 0.4s;
 
-  .none {
+  h2 {
     /* display: none; */
     text-decoration: none;
     color: #4f5665;
-    /* font-size: calc(0.16vw + 16px); */
-    font-size: 16px;
+    font-size: calc(0.16vw + 16px);
   }
+  
 
   @media (max-width: 800px) {
     position: fixed;
