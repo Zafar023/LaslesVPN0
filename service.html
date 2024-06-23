@@ -151,9 +151,15 @@
           </div>
         </div>
       </section>
-      <script src="./script.js"></script>
+      <!-- <script src="./script.js"></script> -->
       
       <script>
+        const header_burger = document.querySelector(".header_burger");
+const header_menu = document.querySelector(".header_menu");
+
+header_burger.addEventListener("click", () => {
+  header_menu.classList.toggle("open");
+});
       function purchaseAlert(plan) {
         alert("You have purchased the " + plan + "!");
       }
